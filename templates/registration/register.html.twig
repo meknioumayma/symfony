@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Register{% endblock %}</title>
+    <style>
+        /* Styles pour le conteneur */
+        body {
+            background-image: url('https://static1.srcdn.com/wordpress/wp-content/uploads/2023/06/best-elsa-cosplays-frozen-3.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Styles pour le formulaire */
+        form {
+            max-width: 400px;
+            background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styles pour le titre */
+        h1 {
+            color: #FF6F61; /* Rouge pastèque */
+            font-size: 36px;
+            margin-bottom: 30px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Styles pour les champs de formulaire */
+        input[type="email"],
+        input[type="password"],
+        input[type="checkbox"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        /* Styles pour les étiquettes des champs */
+        label {
+            color: #2A363B; /* Gris foncé */
+            font-size: 18px;
+        }
+
+        /* Styles pour le bouton */
+        .btn {
+            background-color: #FF6F61; /* Rouge pastèque */
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Styles pour les erreurs de formulaire */
+        .error-message {
+            color: #FF6F61; /* Rouge pastèque */
+            margin-top: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    {% block body %}
+    <form>
+        <h1>Register</h1>
+        <label for="inputEmail">Email</label>
+        <input type="email" name="email" id="inputEmail" required>
+
+        <label for="inputPassword">Password</label>
+        <input type="password" name="password" id="inputPassword" required>
+
+        <input type="checkbox" id="agreeTerms" name="agreeTerms" required>
+        <label for="agreeTerms">I agree to the terms and conditions</label>
+
+        <button type="submit" class="btn">Register</button>
+    </form>
+    {% endblock %}
+</body>
+</html>

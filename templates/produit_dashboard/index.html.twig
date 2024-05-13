@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Custom CSS for Navbar */
+        .navbar {
+            background-color: #343a40; /* Dark */
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .navbar-brand,
+        .navbar-nav .nav-link {
+            color: #fff; /* White */
+            font-size: 18px; /* Increase font size */
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand:hover,
+        .navbar-nav .nav-link:hover {
+            color: #ffc107; /* Yellow */
+        }
+
+        .navbar-toggler {
+            border-color: #fff; /* White */
+        }
+
+        .navbar-toggler-icon {
+            color: #fff; /* White */
+        }
+
+        .navbar-nav .dropdown-menu {
+            background-color: #343a40; /* Dark */
+        }
+
+        .dropdown-item {
+            color: #fff; /* White */
+            transition: all 0.3s ease;
+        }
+
+        .dropdown-item:hover {
+            background-color: #ffc107; /* Yellow */
+            color: #343a40; /* Dark */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#"><i class="fas fa-cogs mr-2"></i> welcome</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-home mr-2"></i> Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-info-circle mr-2"></i> About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-tools mr-2"></i> Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-envelope mr-2"></i> Contact
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Email</a>
+                        <a class="dropdown-item" href="#">Phone</a>
+                        <a class="dropdown-item" href="#">Social Media</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Link Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

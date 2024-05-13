@@ -1,0 +1,23 @@
+controllers:
+    resource: ../src/Controller/
+    type: attribute
+
+login:
+    path: /login
+    controller: App\Controller\SecurityController::login
+
+register:
+    path: /register
+    controller: App\Controller\SecurityController::register
+
+produit_dashboard:
+    path: /produit/dashboard
+    controller: App\Controller\ProduitDashboardController::index
+
+produit_add:
+    path: /produit/add
+    controller: App\Controller\ProduitAddController::index
+
+produit_list:
+    path: /produit/list
+    controller: App\Controller\ProduitListController::index
